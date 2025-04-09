@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta>
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <h2>Welcome to my website</h2>
+    <nav>
+        <a href = "#">About my  Biodata</a>
+        <a href = "#">Contact me</a>
+    </nav>
+
+<form method = "post">
+    {% csrf_token %}
+    <label>name: </label> {{contact_form.name}}
+    <label>email: </label> {{contact_form.email}}
+    <label>phone: </label> {{contact_form.phone}}
+
+    <h3> Qualification </h3>
+    <table> border = "1"</table>
+
+
+</form>
+</body>
+</html>
